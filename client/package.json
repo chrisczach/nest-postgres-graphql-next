@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+      "format": "prettier --write \"*/**/*.{ts,tsx}\"",
      "lint": "tsc --noEmit && eslint \"*/**/*.{ts,tsx}\" --quiet --fix",
     "start": "next start",
     "type-check": "tsc"
