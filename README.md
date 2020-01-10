@@ -4,4 +4,8 @@ This is a full stack starter app using TypeScript. The back end uses Nest.js and
 
 ## How to Use
 
-WIP - Add commands to install dependencies and start dev servers. 
+WIP - Add commands to install dependencies and start dev servers.
+
+### Development
+server <http://localhost:4000>
+client <http://localhost:3000>
