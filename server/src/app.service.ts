@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): { data: string } {
-    return { data: 'Hello World!' };
+  getHello(): string {
+    return `<a href="/graphql">Open Playground</a>`;
   }
 }
