@@ -49,9 +49,8 @@ const mockPost: Post[] = [
 
 @Injectable()
 export class PostsService {
-  posts(): Post[] {
-    return mockPost;
-    // if (id === null) return mockPost;
-    // return mockPost.filter(({ user: { id: userId } }) => userId === id);
+  posts(id: string | null): Post[] {
+    if (id === null) return mockPost;
+    return mockPost.filter(({ user: { id: userId } }) => userId === id);
   }
 }

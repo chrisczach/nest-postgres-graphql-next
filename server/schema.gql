@@ -12,7 +12,7 @@ type Post {
 
 type Query {
   user(id: String!): User!
-  posts: Post!
+  posts(id: String): [Post!]!
 }
 
 type User {

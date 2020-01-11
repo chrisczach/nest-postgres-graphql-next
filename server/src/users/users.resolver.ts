@@ -3,6 +3,8 @@ import { User } from './models/User';
 import { UsersService } from './users.service';
 import { PostsService } from '../posts/posts.service';
 
+
+
 @Resolver((of: any) => User)
 export class UsersResolver {
   constructor(
