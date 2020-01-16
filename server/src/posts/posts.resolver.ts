@@ -11,8 +11,8 @@ export class PostsResolver {
   ) {}
   @Query((_: any) => [Post])
   async posts(
-    @Args({ name: 'id', type: () => String, nullable: true })
-    id?: string | null,
+    @Args({ name: 'id', type: () => Number, nullable: true })
+    id?: number | null,
   ) {
     return await this.postsService.posts(id);
   }

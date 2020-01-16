@@ -11,8 +11,8 @@ type Post {
 }
 
 type Query {
-  user(id: String!): User!
-  posts(id: String): [Post!]!
+  user(id: Float!): User!
+  posts(id: Float): [Post!]!
 }
 
 type User {
