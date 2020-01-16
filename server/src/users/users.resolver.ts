@@ -3,12 +3,11 @@ import { User } from './models/User';
 import { UsersService } from './users.service';
 import { PostsService } from '../posts/posts.service';
 
-
-
-@Resolver((of: any) => User)
+@Resolver((_: any) => User)
 export class UsersResolver {
   constructor(
-    private readonly usersService: UsersService, // private readonly postsServer: PostsService,
+    private readonly usersService: UsersService,
+    private readonly postsServer: PostsService,
   ) {}
 
   @Query(returns => User)
